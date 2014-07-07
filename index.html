@@ -7,23 +7,19 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Kawane's Songbook</title>
-
-    <!-- Jumbotron core CSS -->
-    <link href="../css/jumbotron.css" rel="stylesheet">
+    <title>Theme Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="../css/bootstrap-theme.css" rel="stylesheet">
-
-
-    <style type="text/css"></style>
+    <style id="holderjs-style" type="text/css"></style><style type="text/css"></style>
 </head>
 
-<body>
+<body role="document">
 
+<!-- Fixed navbar -->
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -33,101 +29,51 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Kawane's Songbook</a>
+            <a class="navbar-brand" href="index.html">Kawane</a>
         </div>
-        <!--div class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-        </div--><!--/.navbar-collapse -->
-
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="songbook/index.html">Songbook</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
 </div>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
-        <h1>Kawane's Songbook</h1>
-        <p>Songbook is an extremely simple server that allows you to <b>store and edit songs</b> with chords and lyrics on <b>your own server</b>.
-            It helps setting you free of web site full of distracting animations to focus on the song.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
-    </div>
+<div class="container theme-showcase" role="main">
+
+
+<div class="page-header">
 </div>
 
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Features</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#features" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get your server</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#documentation" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Open Source</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#opensource" role="button">View details »</a></p>
+<div id="projects-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#projects-carousel" data-slide-to="1" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="songbook/index.html">
+                <img src="images/songbook.png" alt="Songbook">
+            </a>
         </div>
     </div>
+    <a class="left carousel-control" href="#projects-carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#projects-carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
 
-    <hr class="featurette-divider">
 
-    <div id="features" class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Features</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/features.png">
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div id="documentation" class="row featurette">
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/openshift.png">
-        </div>
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Get your server</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div id="opensource" class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Open source</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/github.png">
-        </div>
-    </div>
-
-    <hr>
-
-    <footer>
-        <p>Kawane 2014</p>
-    </footer>
 </div> <!-- /container -->
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docs.min.js"></script>
 
 
-</body></html>
+<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" title="" data-original-title="Copy to clipboard">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1404763001722">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">         <embed src="/assets/flash/ZeroClipboard.swf?noCache=1404763001722" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" scale="exactfit">                </object></div></body></html>
