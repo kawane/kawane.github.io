@@ -6,9 +6,14 @@
         <serverdata>
           <mappings>
             <mapping deploy="kawane/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/kawane/css" local="$PROJECT_DIR$/css" web="/css" />
+            <mapping deploy="/kawane/fonts" local="$PROJECT_DIR$/fonts" web="/fonts" />
+            <mapping deploy="/kawane/images" local="$PROJECT_DIR$/images" web="/images" />
+            <mapping deploy="/kawane/js" local="$PROJECT_DIR$/js" web="/js" />
+            <mapping deploy="/kawane/songbook" local="$PROJECT_DIR$/songbook" web="/songbook" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/songbook-website.iml" />
+            <excludedPath local="true" path="$PROJECT_DIR$/kawane-website.iml" />
             <excludedPath local="true" path="$PROJECT_DIR$/README.md" />
           </excludedPaths>
         </serverdata>
