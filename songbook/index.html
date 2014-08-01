@@ -48,7 +48,8 @@
         <h1>Kawane's Songbook</h1>
         <p>Songbook is an extremely simple server that allows you to <b>store and edit songs</b> with chords and lyrics on <b>your own server</b>.
             It helps setting you free of web site full of distracting animations to focus on the song.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
+        <p>It aims to be easily installed on a server, including for <b>not technical users</b>.</p>
+        <div id='intellij-banner'><a href='http://www.jetbrains.com/idea/features/javascript.html' style='display:block; background:#fff url(http://www.jetbrains.com/idea/opensource/img/all/banners/idea468x60_white.gif) no-repeat 0 7px; border:solid 1px #0d3a9e; margin:0;padding:0;text-decoration:none;text-indent:0;letter-spacing:-0.001em; width:466px; height:58px' alt='Java IDE with advanced HTML/CSS/JS editor for hardcore web-developers' title='Java IDE with advanced HTML/CSS/JS editor for hardcore web-developers'><span style='margin: 5px 0 0 61px;padding: 0;float: left;font-size: 12px;cursor:pointer;  background-image:none;border:0;color: #0d3a9e; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;'>Developed with</span><span style='margin:0 0 0 205px;padding:18px 0 2px 0; line-height:13px;font-size:11px;cursor:pointer;  background-image:none;border:0;display:block; width:255px; color:#0d3a9e; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;'>Java IDE with advanced HTML/CSS/JS<br/>editor for hardcore web-developers</span></a></div>
     </div>
 </div>
 
@@ -57,17 +58,18 @@
     <div class="row">
         <div class="col-md-4">
             <h2>Features</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>SongBook is fast and easy to use. Songs are directly editable. User management couldn't be simpler.</p>
             <p><a class="btn btn-default" href="#features" role="button">View details »</a></p>
         </div>
         <div class="col-md-4">
             <h2>Get your server</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>SongBook can easily installed on a server (with Java 8) or a Paas (OpenShift, Google AppEngine, ...).</p>
             <p><a class="btn btn-default" href="#documentation" role="button">View details »</a></p>
         </div>
         <div class="col-md-4">
             <h2>Open Source</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>SongBook is OpenSource under the <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache Licence</a> and available on
+                <a href="http://https://github.com/llgcode/songbook">GitHub</a>. Come hack we us any time.</p>
             <p><a class="btn btn-default" href="#opensource" role="button">View details »</a></p>
         </div>
     </div>
@@ -77,7 +79,10 @@
     <div id="features" class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">Features</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">SongBook is fast and easy to use. Songs are directly editable. User management couldn't be simpler.</p>
+            <p>Store songs with lyrics, chords and some meta-data all in pure html. Full text search over all songs including lyrics.</p>
+            <p>There is no user management, no administration, only a minimal access control.</p>
+            <p>Songs are editable in Wysigiw. It's fully compatible with smartphone and tablets.</p>
         </div>
         <div class="col-md-5">
             <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/songbook.png">
@@ -88,11 +93,31 @@
 
     <div id="documentation" class="row featurette">
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/openshift.png">
+            <div id="server-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item">
+                        <a href="https://github.com/llgcode/songbook/blob/master/doc/Install_With_Docker.md">
+                            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/dockerhub.png"/>
+                        </a>
+                    </div>
+                    <div class="item active">
+                        <a href="https://github.com/llgcode/songbook/blob/master/doc/Install_On_OpenShift.md">
+                            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/openshift.png"/>
+                        </a>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#server-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#server-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
         </div>
         <div class="col-md-7">
             <h2 class="featurette-heading">Get your server</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">SongBook can easily installed on a server (with Java 8) or a Paas (OpenShift, ...).</p>
         </div>
     </div>
 
@@ -101,10 +126,11 @@
     <div id="opensource" class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">Open source</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">SongBook is OpenSource under the <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache Licence</a> and available on
+                <a href="https://github.com/llgcode/songbook">GitHub</a>. Come hack we us any time.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/github.png">
+            <a href="https://github.com/llgcode/songbook"><img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="../images/github.png"></a>
         </div>
     </div>
 
